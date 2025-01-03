@@ -1,0 +1,39 @@
+/* styles.css */
+.hero {
+    height: 100vh;
+    background: url('assets/images/hero-image.jpg') center/cover no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1,
+.hero p {
+    z-index: 2;
+}
+
+.cta-btn {
+    background: #ff6f61;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+}
